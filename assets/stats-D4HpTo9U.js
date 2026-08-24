@@ -1,0 +1,1 @@
+function l(a,s,e=10,r=5){return a.filter(t=>t.stats&&t.stats.gp>=r).map(t=>({player:t,value:t.stats[s]??0})).sort((t,p)=>p.value-t.value).slice(0,e)}const n=a=>{var s;return Math.round((((s=a.stats)==null?void 0:s.ppg)??0)*1.45)},o=a=>{const s=a.stats;return s?+(s.ppg+s.rpg*1.2+s.apg*1.5+s.spg*2+s.bpg*2-6).toFixed(1):0};export{l,n as p,o as s};
