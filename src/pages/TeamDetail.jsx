@@ -110,13 +110,13 @@ export default function TeamDetail() {
           {/* 主场馆 */}
           <figure style={{ margin: '28px 0 0' }}>
             <img
-              src="images/gym-1.jpg"
+              src="images/game-16.jpg"
               alt={team.venue}
               loading="lazy"
               style={{ width: '100%', height: 'auto', maxHeight: 380, objectFit: 'cover', borderRadius: 14, boxShadow: 'var(--shadow-lg)' }}
             />
             <figcaption style={{ textAlign: 'center', fontSize: '0.78rem', color: 'var(--text-faint)', marginTop: 12 }}>
-              主场 · {team.venue}（{fmtNum(team.capacity)} 座）
+              主场掠影 · {team.venue}（{fmtNum(team.capacity)} 座）
             </figcaption>
           </figure>
         </div>

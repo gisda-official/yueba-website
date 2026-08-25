@@ -1,7 +1,8 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { useI18n } from '../context/I18nContext.jsx'
-import news, { newsByCategory, CATEGORY_META } from '../data/news.js'
+import { CATEGORY_META } from '../data/news.js'
+import { useNews } from '../context/NewsContext.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import Kapok from '../components/ornaments/Kapok.jsx'
 import Meander from '../components/ornaments/Meander.jsx'
@@ -10,15 +11,16 @@ const CATEGORIES = ['league', 'team', 'media', 'gallery', 'notice']
 
 export default function News() {
   const { t } = useI18n()
+  const { news } = useNews()
   const [active, setActive] = useState('all')
 
   const list = useMemo(() => {
-    const base = active === 'all' ? news : newsByCategory(active)
+    const base = active === 'all' ? news : news.filter((n) => n.category === active)
     return [...base].sort((a, b) => {
       if (a.pinned !== b.pinned) return a.pinned ? -1 : 1
       return (b.date || '').localeCompare(a.date || '')
     })
-  }, [active])
+  }, [active, news])
 
   return (
     <>

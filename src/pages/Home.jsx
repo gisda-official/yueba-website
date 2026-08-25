@@ -3,7 +3,8 @@ import { useI18n } from '../context/I18nContext.jsx'
 import teams, { getTeam, EAST_TEAMS, WEST_TEAMS } from '../data/teams.js'
 import players from '../data/players.js'
 import matches from '../data/matches.js'
-import news, { CATEGORY_META } from '../data/news.js'
+import { CATEGORY_META } from '../data/news.js'
+import { useNews } from '../context/NewsContext.jsx'
 import announcements from '../data/announcements.js'
 import { computeStandings } from '../lib/standings.js'
 import { leaderboard } from '../lib/stats.js'
@@ -17,6 +18,7 @@ const ALLSTAR = { date: '2026-09-12T19:30:00+08:00', venue: '东莞长安体育�
 
 export default function Home() {
   const { t } = useI18n()
+  const { news } = useNews()
 
   const eastRows = computeStandings(EAST_TEAMS.map((x) => x.id), matches).slice(0, 5)
   const westRows = computeStandings(WEST_TEAMS.map((x) => x.id), matches).slice(0, 5)
@@ -32,7 +34,7 @@ export default function Home() {
       {/* ============ Hero ============ */}
       <section className="hero">
         <img
-          src="images/arena-1.jpg"
+          src="images/game-01.jpg"
           alt=""
           aria-hidden
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}

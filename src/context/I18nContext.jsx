@@ -22,6 +22,7 @@ const dict = {
     'nav.about': '关于粤BA',
     'nav.login': '登录',
     'nav.register': '注册',
+    'nav.admin': '管理后台',
     // 通用
     'common.more': '查看全部',
     'common.view': '查看详情',
@@ -175,6 +176,7 @@ const dict = {
     'nav.about': 'About',
     'nav.login': 'Sign in',
     'nav.register': 'Sign up',
+    'nav.admin': 'Admin',
     'common.more': 'View all',
     'common.view': 'Details',
     'common.back': 'Back',

@@ -1,14 +1,16 @@
 import { Link, useParams } from 'react-router-dom'
 import { useI18n } from '../context/I18nContext.jsx'
-import { getNews, newsByCategory, CATEGORY_META } from '../data/news.js'
+import { CATEGORY_META } from '../data/news.js'
+import { useNews } from '../context/NewsContext.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import Kapok from '../components/ornaments/Kapok.jsx'
 import Meander from '../components/ornaments/Meander.jsx'
 
 export default function NewsDetail() {
   const { t } = useI18n()
+  const { news } = useNews()
   const { id } = useParams()
-  const article = getNews(id)
+  const article = news.find((n) => n.id === id)
 
   // 未命中：优雅空状态
   if (!article) {
@@ -27,7 +29,7 @@ export default function NewsDetail() {
   }
 
   const meta = CATEGORY_META[article.category] || CATEGORY_META.league
-  const related = newsByCategory(article.category).filter((n) => n.id !== article.id).slice(0, 3)
+  const related = news.filter((n) => n.category === article.category).filter((n) => n.id !== article.id).slice(0, 3)
 
   return (
     <>

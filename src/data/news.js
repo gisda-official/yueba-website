@@ -3,14 +3,14 @@
    category: league 联赛新闻 / team 球队动态 / media 媒体聚焦 / gallery 图集视频 / notice 公告
    ========================================================================== */
 
-const news = [
+export const STATIC_NEWS = [
   {
     id: 'finals-champion',
     title: '东莞，粤BA 总冠军！主场 108:73 大胜深圳，周泽源荣膺总决赛 MVP',
     titleEn: 'Dongguan wins the inaugural YueBA title, sweeping Shenzhen 2-0',
     category: 'league',
     date: '2026-08-02',
-    image: 'images/arena-1.jpg',
+    image: 'images/game-04.jpg',
     pinned: true,
     summary:
       '8 月 1 日晚，东莞篮球中心座无虚席。东莞队主场 108:73 击败深圳队，以总比分 2:0 问鼎首届粤BA 总冠军，延续了这座「全国篮球城市」的荣耀。',
@@ -27,7 +27,7 @@ const news = [
     titleEn: 'YueBA All-Star Game & GBA Invitational set for Sep 12-13 in Dongguan',
     category: 'notice',
     date: '2026-08-15',
-    image: 'images/action-1.jpg',
+    image: 'images/game-02.jpg',
     pinned: true,
     summary:
       '粤BA 全明星赛将于 9 月 12 日至 13 日在东莞长安体育公园体育馆举办，东、西区全明星队将与香港队、澳门队同台角逐。全明星票选于 8 月 26 日至 28 日进行。',
@@ -44,7 +44,7 @@ const news = [
     titleEn: 'Zhongshan stuns Guangzhou 86-83 in season opener',
     category: 'league',
     date: '2026-03-22',
-    image: 'images/action-4.jpg',
+    image: 'images/game-03.jpg',
     pinned: false,
     summary:
       '3 月 21 日，2026 年粤BA 在广州天河体育中心体育馆揭幕。中山队客场 86:83 险胜广州队，李文博末节关键三分锁定胜局，为联赛写下戏剧性开局。',
@@ -61,7 +61,7 @@ const news = [
     titleEn: 'Four "Golden 9" thrillers decide the last quarterfinal spots',
     category: 'league',
     date: '2026-07-06',
-    image: 'images/ball-1.jpg',
+    image: 'images/game-05.jpg',
     pinned: false,
     summary:
       '八强附加赛（12 进 8）四场比赛全部通过「黄金九分」决出胜负。汕头、潮州、揭阳、佛山分别在附加赛中涉险晋级，堪称联赛史上最刺激的一轮对决。',
@@ -78,7 +78,7 @@ const news = [
     titleEn: 'Guangzhou blanks Chaozhou 9-0 in Golden 9 to reach semifinals',
     category: 'league',
     date: '2026-07-13',
-    image: 'images/court-2.jpg',
+    image: 'images/game-06.jpg',
     pinned: false,
     summary:
       '1/4 决赛第二回合，广州队与潮州队战至「黄金九分」，广州队以 9:0 零封对手，强势晋级四强，上演了「黄金九分」赛制下最酣畅淋漓的一场胜利。',
@@ -95,7 +95,7 @@ const news = [
     titleEn: 'Shenzhen eliminates Guangzhou 2-0 to book a finals date with Dongguan',
     category: 'league',
     date: '2026-07-20',
-    image: 'images/action-3.jpg',
+    image: 'images/game-07.jpg',
     pinned: false,
     summary:
       '半决赛中，深圳队以总比分 2:0 淘汰广州队，其中第二回合主场仅以 3 分优势险胜。深圳队与东莞队会师总决赛，上演「东区内战」。',
@@ -112,7 +112,7 @@ const news = [
     titleEn: 'Inside Dongguan\'s "strongest home court": 7-0 with a 20+ point margin',
     category: 'team',
     date: '2026-07-28',
-    image: 'images/hoop-3.jpg',
+    image: 'images/game-08.jpg',
     pinned: false,
     summary:
       '从粤韵童谣到爱国歌曲快闪，从华为、OPPO 到非遗醒狮，东莞队把「主场」打造成了城市文化的秀场。总决赛预约人数突破 12 万，一票难求。',
@@ -129,7 +129,7 @@ const news = [
     titleEn: 'Playoff teams debut city-themed jerseys, from dinosaurs to oysters',
     category: 'team',
     date: '2026-06-10',
-    image: 'images/training-1.jpg',
+    image: 'images/game-09.jpg',
     pinned: false,
     summary:
       '季后赛打响，各队身着融入城市特色的全新球衣亮相。河源把恐龙骨架、湛江把生蚝与菠萝、潮州把铁枝木偶等元素印上球衣，成为赛场最亮眼的风景。',
@@ -146,7 +146,7 @@ const news = [
     titleEn: 'Regular-season stat wrap: Liu Shumeng leads scoring & rebounding',
     category: 'league',
     date: '2026-06-22',
-    image: 'images/ball-2.jpg',
+    image: 'images/game-10.jpg',
     pinned: false,
     summary:
       '常规赛落幕，肇庆队刘曙萌以场均 25.42 分、13 篮板包揽得分王与篮板王；佛山钟俊杰场均 8.5 次助攻、东莞刘康能场均 4.5 次抢断、云浮刘朔任场均 4 次盖帽分别领跑各项榜单。',
@@ -163,7 +163,7 @@ const news = [
     titleEn: 'Du Feng elected chairman of Guangdong Basketball Association',
     category: 'media',
     date: '2026-02-20',
-    image: 'images/gym-2.jpg',
+    image: 'images/game-11.jpg',
     pinned: false,
     summary:
       '前中国男篮、广东宏远功勋主教练杜锋当选广东省篮球协会会长。业内人士认为，这将为粤BA 等群众篮球赛事带来更专业的运营与更高的关注度。',
@@ -197,7 +197,7 @@ const news = [
     titleEn: 'National Games mascots "Xiyangyang" & "Lerongrong" join YueBA',
     category: 'gallery',
     date: '2026-03-18',
-    image: 'images/fitness-2.jpg',
+    image: 'images/game-12.jpg',
     pinned: false,
     summary:
       '粤BA 邀请十五运会吉祥物「喜洋洋」「乐融融」返聘上岗，这对萌态可掬的吉祥物将贯穿整个赛季，成为赛场内外的「气氛担当」。',
@@ -213,7 +213,7 @@ const news = [
     titleEn: 'Li Yiyang: Heyuan\'s hometown hero and 2025 Finals MVP',
     category: 'team',
     date: '2026-03-10',
-    image: 'images/court-1.jpg',
+    image: 'images/game-13.jpg',
     pinned: false,
     summary:
       '2025 年，河源队在黎伊扬的带领下打破东莞队垄断夺冠。这位从万绿湖畔走出的控卫，用一场场硬仗书写了属于自己的逆袭故事。',
@@ -230,7 +230,7 @@ const news = [
     titleEn: 'Notice on the reservation-lottery ticketing model',
     category: 'notice',
     date: '2026-03-15',
-    image: 'images/hoop-1.jpg',
+    image: 'images/game-14.jpg',
     pinned: false,
     summary:
       '为保障赛事安全与公平，2026 粤BA 采用「预约摇号购票」模式。观众通过官方渠道实名预约，摇号中签后凭有效证件购票入场。',
@@ -260,10 +260,7 @@ const news = [
   },
 ]
 
-export default news
-
-export const getNews = (id) => news.find((n) => n.id === id)
-export const newsByCategory = (cat) => news.filter((n) => n.category === cat)
+export default STATIC_NEWS
 
 export const CATEGORY_META = {
   league: { zh: '联赛新闻', en: 'League News', color: '#c8102e' },

@@ -30,6 +30,9 @@ export default function Navbar() {
           </div>
           <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
             <span className="topbar__item">微信公众号：广东篮球-粤BA</span>
+            <Link to="/admin" className="topbar__item" style={{ fontWeight: 700, letterSpacing: 1 }}>
+              ⚙ {t('nav.admin')}
+            </Link>
             <button
               onClick={toggleLang}
               className="topbar__item"

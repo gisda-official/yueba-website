@@ -18,6 +18,7 @@ const Community = lazy(() => import('./pages/Community.jsx'))
 const About = lazy(() => import('./pages/About.jsx'))
 const Login = lazy(() => import('./pages/Login.jsx'))
 const Register = lazy(() => import('./pages/Register.jsx'))
+const Admin = lazy(() => import('./pages/Admin.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 
 function PageFallback() {
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
