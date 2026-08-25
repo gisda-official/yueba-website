@@ -1,0 +1,1 @@
+import{j as t}from"./index-FIFjvlwZ.js";function c({team:r,size:e=44,style:a}){const s=`linear-gradient(135deg, ${r.color}, ${r.colorDark})`;return t.jsx("span",{className:"team-crest",style:{width:e,height:e,fontSize:e*.5,background:s,...a},title:r.name,children:t.jsx("span",{className:"team-crest__char",children:r.abbr})})}export{c as T};
