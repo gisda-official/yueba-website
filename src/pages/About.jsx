@@ -239,11 +239,11 @@ export default function About() {
                 <span className="badge badge--crimson" style={{ marginBottom: 12 }}>{t('about.mascot')}</span>
                 <div style={{ display: 'flex', gap: 12, marginBottom: 12 }}>
                   <div style={{ flex: 1, textAlign: 'center', background: 'var(--crimson-tint)', borderRadius: 12, padding: '18px 10px' }}>
-                    <div style={{ fontSize: '2rem' }}>🐏</div>
+                    <div style={{ width: 46, height: 46, margin: '0 auto', borderRadius: '50%', background: 'var(--crimson)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.25rem' }}>洋</div>
                     <div style={{ fontWeight: 800, color: 'var(--crimson)' }}>喜洋洋</div>
                   </div>
                   <div style={{ flex: 1, textAlign: 'center', background: 'var(--jade-soft)', borderRadius: 12, padding: '18px 10px' }}>
-                    <div style={{ fontSize: '2rem' }}>🐑</div>
+                    <div style={{ width: 46, height: 46, margin: '0 auto', borderRadius: '50%', background: 'var(--jade-deep)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, fontSize: '1.25rem' }}>融</div>
                     <div style={{ fontWeight: 800, color: 'var(--jade-deep)' }}>乐融融</div>
                   </div>
                 </div>

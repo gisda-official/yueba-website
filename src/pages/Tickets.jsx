@@ -8,14 +8,14 @@ const ALLSTAR = { date: '2026-09-12T19:30:00+08:00', venue: '东莞长安体育�
 
 // 摇号预约购票流程（与「广东篮球-粤BA」公众号一致）
 const STEPS = [
-  { icon: '🔍', title: '关注公众号', desc: '微信搜索「广东篮球-粤BA」并关注，这是粤BA 唯一的官方购票入口。' },
-  { icon: '🎟️', title: '进入购票入口', desc: '点击公众号主页「粤BA购票」专栏，进入票务预约系统。' },
-  { icon: '🏀', title: '选择赛事', desc: '在预约页面选择想要观看的赛事场次，点击「立即预约」。' },
-  { icon: '📝', title: '填写信息', desc: '添加观赛人信息，包括姓名、身份证号等，请确保信息准确无误。' },
-  { icon: '📨', title: '提交预约', desc: '确认信息无误后提交预约申请，等待摇号结果。' },
-  { icon: '🎲', title: '等待摇号', desc: '摇号结果将通过短信通知，也可在公众号「我的预约」中查看。' },
-  { icon: '💰', title: '中签支付', desc: '中签用户需在规定时间内完成支付；未中签用户票款将原路退回。' },
-  { icon: '🪪', title: '凭身份证入场', desc: '支付成功后，凭本人身份证原件入场，无需兑换实体票。' },
+  { title: '关注公众号', desc: '微信搜索「广东篮球-粤BA」并关注，这是粤BA 唯一的官方购票入口。' },
+  { title: '进入购票入口', desc: '点击公众号主页「粤BA购票」专栏，进入票务预约系统。' },
+  { title: '选择赛事', desc: '在预约页面选择想要观看的赛事场次，点击「立即预约」。' },
+  { title: '填写信息', desc: '添加观赛人信息，包括姓名、身份证号等，请确保信息准确无误。' },
+  { title: '提交预约', desc: '确认信息无误后提交预约申请，等待摇号结果。' },
+  { title: '等待摇号', desc: '摇号结果将通过短信通知，也可在公众号「我的预约」中查看。' },
+  { title: '中签支付', desc: '中签用户需在规定时间内完成支付；未中签用户票款将原路退回。' },
+  { title: '凭身份证入场', desc: '支付成功后，凭本人身份证原件入场，无需兑换实体票。' },
 ]
 
 // 静态二维码样式占位（公众号二维码），确定性图案
@@ -120,8 +120,8 @@ export default function Tickets() {
                   )}
                   <span className="rank rank--1" style={{ width: 44, height: 44, flexShrink: 0, fontSize: '1rem' }}>{i + 1}</span>
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '1.05rem', display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span aria-hidden>{s.icon}</span> {s.title}
+                    <div style={{ fontWeight: 800, fontSize: '1.05rem' }}>
+                      {s.title}
                     </div>
                     <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: 1.7, marginTop: 4 }}>{s.desc}</p>
                   </div>
@@ -133,7 +133,7 @@ export default function Tickets() {
             <div>
               <div className="card" style={{ borderColor: 'var(--line)' }}>
                 <div className="card__body">
-                  <h3 style={{ fontSize: '1.05rem', marginBottom: 12 }}>📋 购票须知</h3>
+                  <h3 style={{ fontSize: '1.05rem', marginBottom: 12 }}>购票须知</h3>
                   <ul style={{ display: 'flex', flexDirection: 'column', gap: 10, fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>
                     <li>· 粤BA 采用<b style={{ color: 'var(--crimson)' }}>预约摇号</b>模式，实名制购票，一证一票。</li>
                     <li>· 预约成功后请等待摇号，结果将通过<b>短信</b>通知，也可在公众号「我的预约」查看。</li>
@@ -147,7 +147,7 @@ export default function Tickets() {
 
               <div className="card card--dark" style={{ marginTop: 16, borderTop: '3px solid var(--gold)' }}>
                 <div className="card__body">
-                  <h3 style={{ fontSize: '1rem', color: '#fff' }}>🎫 票价档位</h3>
+                  <h3 style={{ fontSize: '1rem', color: '#fff' }}>票价档位</h3>
                   <p style={{ color: 'var(--text-invert-muted)', fontSize: '0.85rem', marginTop: 8, lineHeight: 1.7 }}>
                     常规赛票价亲民，设 8.8 元、18.8 元两档；全明星赛与总决赛票价以官方公众号公示为准。
                   </p>

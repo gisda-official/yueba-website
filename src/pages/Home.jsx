@@ -70,7 +70,7 @@ export default function Home() {
           {/* 冠军卡 */}
           <div className="card card--dark fade-up fade-up-2" style={{ boxShadow: 'var(--shadow-lg)', borderTop: '3px solid var(--gold)' }}>
             <div style={{ padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--ink-line)' }}>
-              <span className="badge badge--gold">🏆 2026 总冠军</span>
+              <span className="badge badge--gold">2026 总冠军</span>
               <span style={{ color: 'var(--text-invert-muted)', fontSize: '0.8rem' }}>Champion</span>
             </div>
             <div className="card__body" style={{ textAlign: 'center' }}>
@@ -99,7 +99,7 @@ export default function Home() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, whiteSpace: 'nowrap', animation: 'tickerMove 30s linear infinite' }}>
           {[...pinned, ...pinned].map((a, i) => (
             <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 12 }}>
-              <span className="ticker__label">📢 {t('home.announcement')}</span>
+              <span className="ticker__label">{t('home.announcement')}</span>
               <span>{a.title}</span>
               <span style={{ opacity: 0.5 }}>·</span>
             </span>

@@ -54,7 +54,7 @@ export default function TeamDetail() {
 
         <div className="container" style={{ position: 'relative', zIndex: 2, paddingTop: 'var(--sp-8)', paddingBottom: 'var(--sp-7)' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 36 }}>
-            <TeamCrest team={team} size={96} style={{ boxShadow: '0 16px 44px rgba(0,0,0,0.45)', border: '3px solid rgba(255,255,255,0.14)' }} />
+            <TeamCrest team={team} size={96} style={{ filter: 'drop-shadow(0 16px 44px rgba(0,0,0,0.45))' }} />
             <div style={{ flex: 1, minWidth: 260 }}>
               <div className="hero__eyebrow" style={{ marginBottom: 10 }}>
                 <span style={{ width: 30, height: 3, background: 'var(--gold)', borderRadius: 2, display: 'inline-block' }} />

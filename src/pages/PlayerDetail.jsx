@@ -204,7 +204,7 @@ export default function PlayerDetail() {
                   <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 18 }}>
                     {player.honors.map((h) => (
                       <li key={h} style={{ display: 'flex', gap: 8, alignItems: 'flex-start' }}>
-                        <span style={{ color: 'var(--gold)', fontWeight: 900 }}>🏅</span>
+                        <span style={{ color: 'var(--gold)' }}>◆</span>
                         <span>{h}</span>
                       </li>
                     ))}

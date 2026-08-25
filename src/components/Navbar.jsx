@@ -25,13 +25,11 @@ export default function Navbar() {
       {/* 顶部标语条 */}
       <div className="topbar">
         <div className="container topbar__inner">
-          <div className="topbar__item">
-            <span aria-hidden>🏀</span> 一战城名 · 粤战粤勇
-          </div>
+          <div className="topbar__item">一战城名 · 粤战粤勇</div>
           <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
             <span className="topbar__item">微信公众号：广东篮球-粤BA</span>
             <Link to="/admin" className="topbar__item" style={{ fontWeight: 700, letterSpacing: 1 }}>
-              ⚙ {t('nav.admin')}
+              {t('nav.admin')}
             </Link>
             <button
               onClick={toggleLang}
@@ -49,10 +47,6 @@ export default function Navbar() {
         <div className="container nav__inner">
           <Link to="/" className="nav__brand" onClick={() => setOpen(false)}>
             <Logo size={38} />
-            <span className="nav__brand-text">
-              <span className="nav__brand-title">粤BA</span>
-              <span className="nav__brand-sub">{t('brand.sub')}</span>
-            </span>
           </Link>
 
           <nav className="nav__links">

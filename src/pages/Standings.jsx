@@ -111,7 +111,7 @@ export default function Standings() {
 
           {/* 冠军横幅 */}
           <div className="card card--dark" style={{ borderTop: '3px solid var(--gold)', marginBottom: 28, textAlign: 'center', padding: 28 }}>
-            <span className="badge badge--gold" style={{ fontSize: '0.9rem' }}>🏆 2026 粤BA 总冠军</span>
+            <span className="badge badge--gold" style={{ fontSize: '0.9rem' }}>2026 粤BA 总冠军</span>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14, marginTop: 16 }}>
               <TeamCrest team={champion} size={64} />
               <div style={{ textAlign: 'left' }}>
@@ -163,7 +163,7 @@ export default function Standings() {
               <div style={{ fontSize: '0.8rem', fontWeight: 800, letterSpacing: 2, color: 'var(--text-muted)' }}>总决赛（三局两胜）</div>
               <BracketRow home={playoffBracket.finals.home} away={playoffBracket.finals.away} winner={playoffBracket.finals.winner} note={`${playoffBracket.finals.score} · MVP ${playoffBracket.finals.mvp}`} size={34} />
               <div className="card card--dark" style={{ textAlign: 'center', padding: 16 }}>
-                <span style={{ color: 'var(--gold)', fontWeight: 900, letterSpacing: 2 }}>🏆 {getTeam(playoffBracket.champion).name} · 总冠军</span>
+                <span style={{ color: 'var(--gold)', fontWeight: 900, letterSpacing: 2 }}>{getTeam(playoffBracket.champion).name} · 总冠军</span>
               </div>
             </div>
           </div>

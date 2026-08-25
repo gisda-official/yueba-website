@@ -117,7 +117,7 @@ export default function Players() {
           {/* 得分王卡 */}
           <div className="card card--dark" style={{ boxShadow: 'var(--shadow-lg)', borderTop: '3px solid var(--gold)' }}>
             <div style={{ padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--ink-line)' }}>
-              <span className="badge badge--gold">👑 2026 得分王</span>
+              <span className="badge badge--gold">2026 得分王</span>
               <span style={{ color: 'var(--text-invert-muted)', fontSize: '0.8rem' }}>Scoring Leader</span>
             </div>
             <div className="card__body" style={{ textAlign: 'center' }}>

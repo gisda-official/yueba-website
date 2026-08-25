@@ -447,7 +447,7 @@ export default function Community() {
                             onClick={() => like(c.id)}
                             style={{ marginLeft: 'auto', fontSize: '0.8rem', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: 4 }}
                           >
-                            👍 {c.likes}
+                            赞 {c.likes}
                           </button>
                         </div>
                         <p style={{ marginTop: 10, fontSize: '0.92rem', lineHeight: 1.7 }}>{c.content}</p>

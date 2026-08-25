@@ -125,7 +125,7 @@ export default function Schedule() {
                         </div>
                         <Score m={m} />
                         {m.note && (
-                          <div style={{ padding: '0 14px 12px', fontSize: '0.8rem', color: 'var(--crimson)', fontWeight: 700 }}>⚡ {m.note}</div>
+                          <div style={{ padding: '0 14px 12px', fontSize: '0.8rem', color: 'var(--crimson)', fontWeight: 700 }}>{m.note}</div>
                         )}
                       </div>
                     ))}

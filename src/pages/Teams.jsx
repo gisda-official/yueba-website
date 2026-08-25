@@ -87,7 +87,7 @@ export default function Teams() {
                       <span className={`badge ${tm.region === 'east' ? 'badge--crimson-soft' : 'badge--jade'}`}>
                         {regionLabel(tm.region)}
                       </span>
-                      <span className="badge badge--outline">🏆 {tm.honors.length}</span>
+                      <span className="badge badge--outline">{tm.honors.length} 项荣誉</span>
                     </div>
                   </div>
                 </Link>
