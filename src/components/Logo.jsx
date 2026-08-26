@@ -5,7 +5,7 @@ export default function Logo({ size = 40, showText, dark, style }) {
       <img
         src="images/logo.png"
         alt="粤BA · 广东省城市篮球联赛"
-        style={{ height: size, width: 'auto', display: 'block' }}
+        style={{ height: size, width: 'auto', display: 'block', background: '#fff', borderRadius: 6 }}
       />
     </span>
   )
